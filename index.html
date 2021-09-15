@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <div class="content">
+        <div class="heading">To-Do List </div>
+        <div class="listContainer yScroller" id="listContainer"></div>
+      </div>
+      <div class="sideContainer" id='addContainer'>
+        <div class="sideButtons">
+          <button class="btn addBtn" id="addBtn"> + </button>
+          <button class="btn resetBtn" id='resetBtn'>RESET</button>
+        </div>
+        <div class="inputContainer" id="inputContainer">
+          <textarea class="inputTask" id="inputTask" cols="30" rows="10" placeholder="Type, then Hit Confirm / Enter"></textarea>
+          <button class="btn confirmBtn" id='confirmBtn'>&#10004</button>
+        </div>
+      </div>
+    </div>
+    <script src="toDo.js"></script>
+    <script src="https://kit.fontawesome.com/a2cca5be75.js" crossorigin="anonymous"></script>
+  </body>
+</html>

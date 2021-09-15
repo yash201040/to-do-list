@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.shell {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-image: url("https://wallpapercave.com/wp/otgYJMh.jpg");
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: rgb(179, 240, 255);
+  width: fit-content;
+  padding: 10px;
+  cursor: default;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 15px 0 rgb(255, 0, 212);
+  border-radius: 20px;
+  background-color: rgb(255, 93, 147);
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  min-height: 250px;
+  max-height: 720px;
+  overflow-y: auto;
+  margin-top: 50px;
+  padding: 40px 35px;
+  border: 2px solid rgb(140, 0, 255);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 2px 8px 0 rgb(52, 225, 255);
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+.listContainer:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 5px 8px 0 blue;
+  background-color: white;
+}
+
+/* Scrollbar width */
+.yScroller::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar Track */
+.yScroller::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Scrollbar Handle */
+.yScroller::-webkit-scrollbar-thumb {
+  background: darkturquoise;
+  border-radius: 10px;
+}
+
+/* Scrollbar Handle on hover */
+.yScroller::-webkit-scrollbar-thumb:hover {
+  background: lightskyblue;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 2%;
+}
+.listItem:hover {
+  background-color: rgb(255, 230, 252);
+}
+
+.taskContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 1000px;
+  height: 100px;
+}
+
+.taskData {
+  display: flex;
+  color: rgb(0, 98, 122);
+  font-weight: 500;
+  font-size: 25px;
+  max-height: 80px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.timeData {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: blue;
+  font-weight: lighter;
+  margin: 0 0 0 20px;
+  cursor: default;
+}
+
+.optionsContainer {
+  display: none;
+  margin: 6px;
+}
+
+.taskOptions {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.editBtn {
+  margin-top: 0;
+  background-color: orange;
+}
+.editBtn:hover {
+  background-color: rgb(255, 204, 108);
+}
+
+.delBtn {
+  margin-bottom: 0;
+  background-color: orangered;
+}
+.delBtn:hover {
+  background-color: rgb(255, 111, 59);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn:hover {
+  cursor: pointer;
+  color: white;
+}
+.btn:active {
+  box-shadow: 1px 2px black;
+  transform: translateY(3px);
+}
+.btn:disabled {
+  color: rgb(100, 100, 100);
+  cursor: default;
+  border: 2px solid rgb(92, 92, 92);
+  box-shadow: none;
+  background-color: darkgray;
+}
+.btn:disabled:hover {
+  background-color: darkgray;
+  box-shadow: none;
+}
+.btn:disabled:active {
+  box-shadow: none;
+  transform: none;
+}
+
+.sideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.sideButtons {
+  display: flex;
+}
+
+.addBtn {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  background-color: skyblue;
+  margin-top: 50px;
+  margin-right: 15px;
+}
+.addBtn:hover {
+  background-color: lightblue;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 3px 4px 0 rgb(0, 174, 255);
+}
+.addBtn:active {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(25, 0, 255);
+}
+
+.resetBtn {
+  font-size: 20px;
+  width: 80px;
+  height: 60px;
+  background-color: red;
+  margin-top: 50px;
+}
+.resetBtn:hover {
+  background-color: orangered;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 3px 4px 0 rgb(255, 0, 85);
+}
+.resetBtn:active {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(255, 0, 0);
+}
+
+.inputContainer {
+  display: none;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputTask {
+  width: 400px;
+  height: 40px;
+  resize: none;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid orange;
+}
+.inputTask:focus {
+  border: 3px solid darkorange;
+  outline: none;
+}
+
+.confirmBtn {
+  width: 40px;
+  height: fit-content;
+  font-size: 30px;
+  margin-left: 5px;
+  background-color: lightgreen;
+}
+.confirmBtn:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
